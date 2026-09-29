@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabarito-Trabalhando com alinhamento</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 400px;   
+            height: 400px;
+        
+            border-collapse: collapse;
+        }
+        td {
+            border: 1px solid black;
+            padding: 8px;
+
+            text-align: center;
+
+            vertical-align: middle;
+        }
+
+        .numero {
+            text-align: right;
+        }
+
+        .esquerda {
+            text-align: left;
+            vertical-align: top;
+        }
+
+        .linha-fina {
+            height: 50px;
+            width: 50px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Gabarito-Trabalhando com alinhamento</h1>
+    
+    <!-- 
+        Hierarquia de tabelas (Simples)
+        Table = tabela
+            Table Row = Linha da tabela
+                Table Header = cabeçalho de tabela Data = dado da tabela Data = dado da tabela
+    -->
+    <table>
+        <tr class="linha-fina"> <!-- Primeira linha -->
+            <td class="esquerda">A1<br>(esquerda)
+            <td class="padrão">B1<br>(padrão centro)
+            <td class="direita">C1<br>(direita)
+        </tr> <!-- Segunda linha -->
+        <tr class="linha">
+            <td>A2</td>
+            <td>B2</td>
+            <td class="numero">C2</td>
+        </tr>
+        <tr> <!-- Terceira linha -->
+            <td>A3</td>
+            <td>B3</td>
+            <td class="numero">C3</td>
+        </tr>
+        <tr> <!-- Quarta linha -->
+            <td>A4</td>
+            <td class="dado">B4</td>
+            <td>C4</td>
+        </tr>
+
+    </table>
+    
+</body>
+</html>
